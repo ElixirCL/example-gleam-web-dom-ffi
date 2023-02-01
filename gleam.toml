@@ -1,0 +1,22 @@
+name = "elixircl_gleam_web_dom"
+version = "0.1.0"
+description = "Browser API libraries for Gleam. Type definitions and low level interface implementations for the W3C DOM spec."
+
+# Fill out these fields if you intend to generate HTML documentation or publish
+# your project to the Hex package manager.
+#
+licences = ["MIT"]
+repository = { type = "github", user = "elixircl", repo = "ce-gleam-web-dom" }
+# links = [{ title = "Website", href = "https://gleam.run" }]
+
+target = "javascript"
+
+[javascript]
+typescript_declarations = true
+
+[dependencies]
+gleam_stdlib = "~> 0.26"
+gleam_javascript = "~> 0.4"
+
+[dev-dependencies]
+gleeunit = "~> 0.10"
